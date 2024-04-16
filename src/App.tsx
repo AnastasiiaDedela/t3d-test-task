@@ -1,35 +1,64 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './index.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="wrapper">
+      <div className="container">
+        <header>
+          <div className="logo-block">
+            <p>Premier League</p>
+            <div className="logo">
+              <img src="../public/images/logo.png" alt="Logo" />
+            </div>
+          </div>
+        </header>
+        <div className="teams-block">
+          <div className="left-team team">
+            <div className="team-logo left-team-logo">
+              <img src="../public/images/left-team.png" alt="Left team" />
+            </div>
+            <p>MANCHESTER CITY</p>
+          </div>
+          <p>VS</p>
+          <div className="right-team team">
+            <div className="team-logo right-team-logo">
+              <img src="../public/images/right-team.png" alt="Right team" />
+            </div>
+            <p>LIVERPOOL</p>
+          </div>
+        </div>
+        <div className="teams-navigation-block">
+          <ul className="teams-list">
+            <li>TEAM 1</li>
+            <li>TEAM 2</li>
+            <li>TEAM 3</li>
+          </ul>
+        </div>
+        <div className="playground-block">
+          <div className="playground-wrapper">
+            <img src="../public/images/playgroud.png" alt="Playgroud" />
+          </div>
+        </div>
+        <div className="coaches-block">
+          <div className="coaches-wrapper">
+            <div className="left-coach coach">
+              <p>Jurgen Klopp</p>
+              <div className="coach-photo">
+                <img src="../public/images/left-coach.png" alt="Left coach" />
+              </div>
+            </div>
+            <p>Coach</p>
+            <div className="right-coach coach">
+              <div className="coach-photo">
+                <img src="../public/images/right-coach.png" alt="Right coach" />
+              </div>
+              <p>Jurgen Klopp</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
