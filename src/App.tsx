@@ -1,10 +1,9 @@
 import './index.css';
-import { redTeamImages } from './images';
-import { blueTeamImages } from './images';
-import team1 from '../db/team1.json';
+// import { redTeamImages } from './images';
+// import { blueTeamImages } from './images';
+// import team1 from '../db/team1.json';
 
 function App() {
-  const teamBlue = team1.response[0].startXI;
   return (
     <div className="wrapper">
       <div className="container">
