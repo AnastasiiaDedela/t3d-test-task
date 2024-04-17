@@ -1,6 +1,10 @@
 import './index.css';
+import { redTeamImages } from './images';
+import { blueTeamImages } from './images';
+import team1 from '../db/team1.json';
 
 function App() {
+  const teamBlue = team1.response[0].startXI;
   return (
     <div className="wrapper">
       <div className="container">
@@ -38,6 +42,14 @@ function App() {
           <div className="playground-wrapper">
             <img src="../public/images/playgroud.png" alt="Playgroud" />
           </div>
+          {/* <div>
+            {teamBlue.map((player, idx) => (
+              <div className="player" key={teamBlue[idx].player.id}>
+                {teamBlue[idx].player.id}
+                {blueTeamImages[idx]}
+              </div>
+            ))}
+          </div> */}
         </div>
         <div className="coaches-block">
           <div className="coaches-wrapper">
